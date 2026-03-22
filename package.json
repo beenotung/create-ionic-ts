@@ -1,0 +1,37 @@
+{
+  "name": "create-ionic-ts",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "cli.js",
+  "bin": {
+    "create-ionic-ts": "cli.js"
+  },
+  "files": [
+    "cli.js",
+    "template/.gitignore",
+    "template/package.json",
+    "template/tsconfig.json",
+    "template/src/app.ts",
+    "template/src/storage.ts",
+    "template/src/ui.ts",
+    "template/www/index.html",
+    "template/www/style.css"
+  ],
+  "scripts": {
+    "test": "tsc --noEmit",
+    "build": "tsc -p . && chmod +x cli.js"
+  },
+  "dependencies": {
+    "npm-init-helper": "^1.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
