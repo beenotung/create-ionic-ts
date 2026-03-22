@@ -29,12 +29,29 @@
       <ion-header>
         <ion-toolbar color="primary">
           <ion-title role="heading" aria-level="1">Ionic App</ion-title>
+          <ion-buttons slot="end">
+            <ion-button id="refresh-button">
+              <ion-icon slot="icon-only" name="refresh"></ion-icon>
+            </ion-button>
+          </ion-buttons>
         </ion-toolbar>
       </ion-header>
       <ion-content class="ion-padding-horizontal">
-        <p>Hello World</p>
-        <h2>Counter Demo</h2>
-        <ion-button id="counter-button">Loading...</ion-button>
+        <p id="desc-text">Total n items.</p>
+        <ion-list id="items-list">
+          <ion-item>
+            <ion-label>
+              <span class="item-title">Item title</span>:
+              <span class="item-count">0</span>
+            </ion-label>
+            <ion-button class="item-increase-button" slot="end" color="primary">
+              <ion-icon slot="icon-only" name="add"></ion-icon>
+            </ion-button>
+            <ion-button class="item-delete-button" slot="end" color="danger">
+              <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-button>
+          </ion-item>
+        </ion-list>
       </ion-content>
     </ion-app>
     <script src="bundle.js"></script>
