@@ -1,6 +1,6 @@
 {
   "name": "create-ionic-ts",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "commonjs",
   "description": "Minimal Ionic + Capacitor starter template: plain TypeScript and ion-* components in HTML — no frontend framework",
   "keywords": [
