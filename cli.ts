@@ -12,15 +12,13 @@ async function main() {
   })
   console.log(
     `
-created ts-canvas template
+created Ionic + TypeScript starter template
 
 Get started by typing:
   cd ${dest}
   code .
   npm install
-  npm run dev
-
-Then open index.html with the Live Server VSCode extension.
+  npm start
 
 Or using alternative installer:
   pnpm install
